@@ -18,7 +18,7 @@
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.12.0-M1</version>
-            <scope>Reverse</scope>
+            <scope>StringBuilder.Reverse</scope>
         </dependency>
     </dependencies>
 
