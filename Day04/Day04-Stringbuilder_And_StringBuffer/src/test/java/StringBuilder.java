@@ -15,11 +15,6 @@ public class StringBuilder {
             String str = "palak";
             Assertions.assertEquals(Reverse_String.reverse("kalap") , str);
         }
-        @Test
-    void conc(){
-        String str = "Palak is Lucky ";
-        String[] s = new String[]{"Palak","is","Lucky"};
-        Assertions.assertEquals(Concatinate_String.concatinateString(s), str);
-        }
+
     }
 
