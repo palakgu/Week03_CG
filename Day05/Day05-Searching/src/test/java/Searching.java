@@ -1,8 +1,10 @@
 import Lenior_search.Find_Word;
 import Lenior_search.First_Negative;
 import binary_search.Find_Target;
+import binary_search.FirstandLastOccurence;
 import binary_search.Peak_Element;
 import binary_search.Rotation_Point;
+import input_reader.ByteToCharacterStream;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -42,5 +44,20 @@ public class Searching {
         int target = 3;
         boolean flag = true;
         Assertions.assertEquals(Find_Target.searchMatrix(matrix , target), flag);
+    }
+    @Test
+    void occurence(){
+        int[] nums = {2, 4, 4, 4, 5, 5, 7, 9};
+        int target = 4;
+        int n =1;
+        int m=3;
+        Assertions.assertEquals(FirstandLastOccurence.findFirstOccurrence(nums ,target) ,n );
+        Assertions.assertEquals(FirstandLastOccurence.findLastOccurrence(nums,target),m);
+    }
+    @Test
+    void input(){
+        String fileName =  "C:\\Users\\palak\\OneDrive\\Desktop\\New folder\\file1.txt";
+        String str = "my name palak , i have been selected in Capgemini . and currently pursuing training i  Capgemini lab .";
+        Assertions.assertEquals(ByteToCharacterStream.readAndReturnFileContent(fileName).trim(),str);
     }
 }
