@@ -4,6 +4,8 @@ import binary_search.Find_Target;
 import binary_search.FirstandLastOccurence;
 import binary_search.Peak_Element;
 import binary_search.Rotation_Point;
+import chalange_problems.BinarySearch;
+import chalange_problems.Lenior_Search;
 import input_reader.ByteToCharacterStream;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -60,5 +62,17 @@ public class Searching {
         String str = "my name palak , i have been selected in Capgemini . and currently pursuing training i  Capgemini lab .";
         Assertions.assertEquals(ByteToCharacterStream.readAndReturnFileContent(fileName).trim(),str);
     }
-
+@Test
+    void Search(){
+        int arr[] = {3, 4, -1, 1};
+    int target = 4;
+    int pos = 3;
+    Assertions.assertEquals(BinarySearch.binarySearch(arr , target),pos);
+}
+@Test
+    void search2(){
+    int[] nums = {3, 4, -1, 1};
+    int ans = 2;
+    Assertions.assertEquals(Lenior_Search.firstMissingPositive(nums), ans);
+}
 }
