@@ -1,5 +1,6 @@
 import Lenior_search.Find_Word;
 import Lenior_search.First_Negative;
+import binary_search.Find_Target;
 import binary_search.Peak_Element;
 import binary_search.Rotation_Point;
 import org.junit.jupiter.api.Assertions;
@@ -29,5 +30,17 @@ public class Searching {
         int array[] = {2,3,4,5,6,1};
         int n = 6;
         Assertions.assertEquals(Peak_Element.findPeak(array),n);
+    }
+    @Test
+    void target(){
+        int[][] matrix = {
+                {1, 3, 5, 7},
+                {10, 11, 16, 20},
+                {23, 30, 34, 60}
+        };
+
+        int target = 3;
+        boolean flag = true;
+        Assertions.assertEquals(Find_Target.searchMatrix(matrix , target), flag);
     }
 }
