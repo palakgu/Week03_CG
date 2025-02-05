@@ -60,4 +60,5 @@ public class Searching {
         String str = "my name palak , i have been selected in Capgemini . and currently pursuing training i  Capgemini lab .";
         Assertions.assertEquals(ByteToCharacterStream.readAndReturnFileContent(fileName).trim(),str);
     }
+
 }
