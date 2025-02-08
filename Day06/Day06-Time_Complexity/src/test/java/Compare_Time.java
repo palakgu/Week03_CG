@@ -1,3 +1,4 @@
+import Comparingdifferentdatastructures.Different_DataStructures;
 import Recursivevsiterativefibonacci.RecursiveVsIterativeFibonacci;
 import largefilereadingefficiency.LargeFileReadingEfficiency;
 import org.junit.jupiter.api.Assertions;
@@ -15,5 +16,14 @@ public class Compare_Time {
     void recursiveVsIterative(){
         double arr[] = RecursiveVsIterativeFibonacci.compare();
         Assertions.assertTrue(arr[1]>arr[0]);
+    }
+    @Test
+    void DataStructures() {
+             int sizes[] = {1000, 10000, 100000};
+                for (int size : sizes) {
+
+            double arr[] =  Different_DataStructures.compare(size);
+                     Assertions.assertTrue(arr[2]>arr[1]);
+        }
     }
 }
