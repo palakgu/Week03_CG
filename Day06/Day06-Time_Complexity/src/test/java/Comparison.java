@@ -1,3 +1,4 @@
+import largefilereadingefficiency.LargeFileReadingEfficiency;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import search_comparision.SearchComparison;
@@ -5,6 +6,8 @@ import sorting_comparison.SortingComparison;
 import string_Comparison.StringComparison;
 
 public class Comparison {
+    private Object LargeFileReadingEfficiency;
+
     @Test
     void searchingComparison(){
         int sizes[] = {1000,10000 ,100000};
@@ -32,4 +35,5 @@ public class Comparison {
             Assertions.assertTrue(ans[0]>ans[1]&& ans[0]>ans[2]);
         }
     }
+
 }
